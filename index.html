@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page 1 -->
+    <div class="container-page1">
+        <div class="content-page1">
+            <h2>AWARD WINNING</h2>
+            <h1>DIGITAL MARKETING AGENCY</h1>
+            <p>Morbi sed lacus nec risus finibus feugiat at fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus. Morbi sed lacus nec risus finibus feugiat at fermentum.</p>
+            <button id="contactBtn">CONTACT US</button>
+        </div>
+        <div class="image-container-page1">
+            <img src="hero.png" alt="Agency Image">
+        </div>
+    </div>
+
+    <!-- Pop-up form -->
+    <div id="popupForm" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Talk to us</h2>
+            <form action="https://getform.io/f/pagxrywb" method="POST">
+                <div class="login-field-content">
+                    <input type="email" name="email" class="login-field-input" placeholder="Work email*" required>
+                </div>
+                <div class="login-field-content">
+                    <input type="text" name="first-name" class="login-field-input" placeholder="First name*" required>
+                    <input type="text" name="last-name" class="login-field-input" placeholder="Last name*" required>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+                </div>
+                <button type="submit">Contact Us</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <!-- Page 2 -->
+    <div class="container-page2">
+        <h2>WHAT WE DO</h2>
+        <div class="services-intro">
+            <h3>SERVICES PROVIDE FOR YOU</h3>
+            <div class="services-header">
+                <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus. Morbi sed lacus nec risus finibus feugiat et fermentum.</p>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <!-- First Slide with all images -->
+                <div class="slide">
+                    <div class="column">
+                        <img src="1.png" alt="Image1">
+                    </div>
+                    <div class="column">
+                        <img src="2.png" alt="Image2">
+                    </div>
+                    <div class="column">
+                        <div class="column-red">
+                            <img src="tagIcon.png" alt="TagIcon" class="small-icon">
+                            <h4>WEB DEVELOPMENT</h4>
+                            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque</p>
+                            <a href="https://www.fylehq.com/" rel="noopener" class="read-more-button" target="_blank">
+                                <span class="button-text">READ MORE</span>
+                                <img src="arrow.png" alt="Arrow" width="10" height="10">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="3.png" alt="Image3">
+                    </div>
+                </div>
+                <!-- Additional Slides as needed -->
+                <div class="slide">
+                    <div class="column">
+                        <img src="21.png" alt="NextImage21">
+                    </div>
+
+                    <div class="column">
+                        <img src="11.png" alt="NextImage11">
+                    </div>
+
+                    <div class="column">
+                        <img src="31.png" alt="NextImage31">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="column">
+                        <img src="3.png" alt="Image3">
+                    </div>
+                    <div class="column">
+                        <img src="2.png" alt="Image2">
+                    </div>
+                    <div class="column">
+                        <img src="1.png" alt="Image1">
+                    </div>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <!-- Add more dots as needed -->
+        </div>
+    </div>
+    
+    
+    
+
+    <!-- Page 3 -->
+    <div class="container-page3">
+        <h2 class="project">OUR PROJECT</h2>
+        <h3 class="head">WHY WE ARE BEST</h3>
+        <div class="main-content-container-page3">
+            <div class="image-container-page3">
+                <img id="main-image" src="image.png" alt="Image">
+            </div>
+            <div class="content-container-page3">
+                <div class="content-page3" onclick="changeImage('image.png')">
+                    <h4>Genderless Kei - Japan's Hot</h4>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="content-page3" onclick="changeImage('image1.png')">
+                    <h4>Better Strategy & Quality</h4>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+                <div class="content-page3" onclick="changeImage('image2.png')">
+                    <h4>Genderless Kei - Japan's Hot</h4>
+                    <p>Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Page 4 -->
+    <section class="company-growth">
+        <h2 class="growth">OUR COMPANY GROWTH</h2>
+        <div class="stats-container">
+            <div class="stat-card" id="customers">
+                <div class="icon">
+                    <img src="customer.png" alt="Customer Icon">
+                </div>
+                <div class="number">199 +</div>
+                <div class="label">Satisfied Customers</div>
+            </div>
+            <div class="stat-card" id="days">
+                <div class="icon">
+                    <img src="days.png" alt="Days Icon">
+                </div>
+                <div class="number">1591+</div>
+                <div class="label">Days Of Operation</div>
+            </div>
+            <div class="stat-card" id="projects">
+                <div class="icon">
+                    <img src="project.png" alt="Projects Icon">
+                </div>
+                <div class="number">283 +</div>
+                <div class="label">Complete Projects</div>
+            </div>
+            <div class="stat-card" id="awards">
+                <div class="icon">
+                    <img src="award.png" alt="Awards Icon">
+                </div>
+                <div class="number">75+</div>
+                <div class="label">Awards Won</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

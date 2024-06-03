@@ -1,0 +1,405 @@
+/* Common CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Page 1 CSS */
+.container-page1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+}
+
+.content-page1 {
+    max-width: 50%;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+.container-page1 .image-container-page1 img {
+    width: 600px; /* Set the desired width */
+    height: 600px; /* Maintain aspect ratio */
+    margin-left: 10px; /* Space between text and image */
+    padding-right: 85px;
+}
+
+h2 {
+    color: red;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Page 2 CSS */
+.container-page2 {
+    padding: 50px;
+    margin-left: 10px; /* Space between text and image */
+    padding-right: 85px;
+}
+
+.services-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.services-header {
+    max-width: 50%; /* Adjust the width as needed */
+}
+
+h2 {
+    font-size: 24px;
+    color: #ff0000; /* Red color */
+}
+
+h3 {
+    text-align: left;
+    font-size: 60px; /* Increased font size */
+    margin: 0 0 20px 0; /* Adjusted margin */
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333; /* Slightly darker text color for readability */
+    margin-top: -15px;
+    margin-bottom: -5px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Slightly darker text color for readability */
+    margin-top: 20px;
+}
+
+/* Slider styling */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around; /* Adjust alignment as needed */
+}
+
+/* Row and column layout */
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px; /* Added margin to separate from the header */
+}
+
+.column {
+    width: 23%;
+}
+
+.column img {
+    width: 100%;
+}
+
+.column-red {
+    background-color: #FF3147;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align text */
+    height: 410px;
+    border-radius: 1%;
+}
+
+.column-red h4,
+.column-red p,
+.column-red a {
+    color: white; /* Ensure text color remains readable */
+}
+
+.column-red .small-icon {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Maintain aspect ratio */
+    margin-bottom: 40px; /* Space below the icon */
+    margin-top: 80px;
+}
+
+.read-more-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: white; /* Button background color */
+    color: #FF3147; /* Text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #FF3147; /* Border color */
+    /* border-radius: 5px; */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 18px; /* Add margin to separate from the paragraph */
+}
+
+.button-text {
+    color: #FF3147; /* Red text color */
+}
+
+.read-more-button img {
+    width: 30px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Space between text and image */
+}
+
+.read-more-button:hover {
+    background-color: #FF3147; /* Hover background color */
+    color: white;
+}
+
+.read-more-button:hover .button-text {
+    color: white; /* Hover text color */
+}
+
+/* Dots styling */
+.dots {
+    text-align: center;
+    padding: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Page 3 CSS */
+.container-page3 {
+    padding: 50px;
+}
+
+.main-content-container-page3 {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* Align items at the start of the container */
+}
+
+.image-container-page3 {
+    flex: 1; /* Allow the image container to take up 1 part of the space */
+    width: 200px;
+    height: 50px;
+}
+
+.image-container-page3 img {
+    width: 100%;
+    max-width: 600px;
+    /* border-radius: 0; */
+    padding-left: 50px;
+    
+}
+
+.content-container-page3 {
+    flex: 1; /* Allow the content container to take up 1 part of the space */
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    padding-left: 50px;
+}
+
+.head {
+    padding-left: 50px;
+}
+
+.content-page3 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    cursor: pointer;
+    width: 350px;
+    height: 107px;
+    
+}
+
+
+.content-page3 h3 {
+    margin: 0 0 10px 0;
+    color: #000;
+}
+
+.content-page3 p {
+    margin: 0;
+}
+
+.content-page3:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.content-page3:hover h3,
+.content-page3:hover p {
+    color: #fff; /* Ensure text color changes to white on hover */
+}
+
+/* Page 4 CSS */
+.company-growth {
+    text-align: center;
+    padding: 50px;
+}
+
+.stats-container {
+    display: flex;
+    /* justify-content: space; */
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.stat-card {
+    background: #f2efef;
+    border: 1px solid #ddd;
+    /* border-radius: 10px; */
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.growth {
+    padding-right: 250px;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 40px;
+}
+
+.number {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.label {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Pop-up form CSS */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkbox-container {
+    margin-bottom: 25px; /* Add space between checkbox label and button */
+}
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    background-color: #ff0047;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+button[type="submit"]:hover {
+    background-color: #d4003c;
+}
+
+
